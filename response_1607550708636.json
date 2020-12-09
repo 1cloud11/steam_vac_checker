@@ -1,0 +1,71 @@
+{
+  "player_id": "4c568fce-ef08-4e4d-a90d-3b0da03a6a35",
+  "nickname": "1cIoud",
+  "avatar": "https://assets.faceit-cdn.net/avatars/4c568fce-ef08-4e4d-a90d-3b0da03a6a35_1550919281451.jpg",
+  "country": "ua",
+  "cover_image": "",
+  "cover_featured_image": "",
+  "infractions": {
+    "last_infraction_date": "Sun Jul 24 16:48:13 UTC 2016",
+    "afk": 0,
+    "leaver": 0,
+    "qm_not_checkedin": 1,
+    "qm_not_voted": 0
+  },
+  "platforms": {
+    "steam": "STEAM_0:1:30638946"
+  },
+  "games": {
+    "csgo": {
+      "game_profile_id": "ca051767-2880-4f12-beef-aa3fdef04063",
+      "region": "EU",
+      "regions": {
+        "EU": {
+          "selected_ladder_id": "cb94d2a1-da7c-488b-858c-b1080bdda2d1"
+        }
+      },
+      "skill_level_label": "3",
+      "game_player_id": "76561198021543621",
+      "skill_level": 3,
+      "faceit_elo": 988,
+      "game_player_name": "Capitan"
+    }
+  },
+  "settings": {
+    "language": "ru"
+  },
+  "friends_ids": [
+    "01846aad-fa9c-48ff-a59c-a0cc83f053ed",
+    "b2c2bdb6-c484-41c1-a4c8-8425c065e223",
+    "7fd07b6c-5647-4e8c-8fe6-e152bff897f7",
+    "d66e42cb-03ad-4dc0-ab5c-d18a0eb6ecb0",
+    "8f8ef31a-dc8a-4f31-813d-47b9e67b5ffc",
+    "80d3b898-0dde-4d25-8780-03035984efb8",
+    "d558bf37-d52a-4685-818a-ebf0feb8b92c",
+    "023c886b-065c-4158-8b36-300ab6c55da0",
+    "0ece827f-6bc0-4116-a004-b88e9d74b362",
+    "6088a722-e5df-4917-9a5c-c9f39a5b9b53",
+    "29e542d7-eb70-45ef-bb4d-b3ea2785f2a8",
+    "6430616a-448b-4c9e-8b00-c10b3b5b7820",
+    "6546ab74-aba8-4a9e-a626-f62ea6c462a3",
+    "cf532c44-133e-4a53-887c-201f32bf6ba2",
+    "89bd1ed7-46fb-44ed-8f16-6a6ccc0ac84b",
+    "bc5532c2-fac3-4f5b-8ec4-55d52a1eeffd",
+    "dcb451a8-f77d-4f11-991a-5015f33d55e3",
+    "17a2ca04-34fe-4581-bb2c-e2845d92245b",
+    "04692dc5-e733-45b0-b148-b8a66572c98d",
+    "bbfaeb7c-bca0-40f0-b966-f46d65706319",
+    "8947c4a9-eb68-47a9-a0f1-10aa01446333",
+    "c306e867-23d8-48e2-b760-a4cc7d5eab1f",
+    "94749d98-29fb-412d-837a-80be0cf335d7"
+  ],
+  "bans": [],
+  "new_steam_id": "[U:1:61277893]",
+  "steam_id_64": "76561198021543621",
+  "steam_nickname": "TANK",
+  "membership_type": "free",
+  "memberships": [
+    "free"
+  ],
+  "faceit_url": "https://www.faceit.com/{lang}/players/1cIoud"
+}

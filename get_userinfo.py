@@ -14,6 +14,7 @@ def get_userinfo(steam_user_url):
     vac = root.find("vacBanned").text #VAC_count
 
     json_url = "http://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key=" + STEAM_API_KEY + "&steamids=" + steamid64
+    print(json_url)
     params = {
         "format": "json",
     }
@@ -33,18 +34,13 @@ def get_userinfo(steam_user_url):
             "accept": "application/json",
             "Authorization": f"Bearer {FACEIT_API_KEY}",
             }
-    #Somwhere here is an error
+
     faceit_info = requests.get(first_faceit_url, headers=headers).json()
-    #print(faceit_info)
-    try:    
-        faceit_id = faceit_info["player_id"]
-        faceit_name = faceit_info["nickname"]
-        faceit_level =faceit_info["skill_level_label"]
-        faceit_elo = faceit_info["faceit_elo"]
-    except:
-        return False
-
-
+       
+    faceit_id = faceit_info["player_id"]
+    faceit_name = faceit_info["nickname"]
+    faceit_level = faceit_info["games"]["csgo"]["skill_level_label"]
+    faceit_elo = faceit_info["games"]["csgo"]["faceit_elo"]
 
     user_info = {
         "steamID64": steamid64, 
@@ -63,19 +59,7 @@ if __name__ == "__main__":
     g = get_userinfo(user_url)
     print(g)
 
-    #Создать список словарей, в который будет вносится новый словарь в случае добавления юзера.
-    #Список словарей записывать в файл.json
-    #Запрос поступает боту тг, имя файла = tg_user_id.json
-    #Перед внесением юзера программа должна проверить по steamid, нет ли уже такого юзера в списке. Если есть - программа должна получить новые данные по VAC:
-    #   Если есть:
-    #   - [SteamID: ...]
-    #   - [Steam_name: Name (New name)]
-    #   - [VAC: ... (New +..)]
-    #   - [DaysSinceLastBan: ...]
-    #   Если нет:
-    #   - отразить старую информацию
-    #
-    #
+
     #Добавить инфу из: http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=STEAM_API_KEY&steamid=STEAMID%20&format=json
     #	"Counter-Strike: Global Offensive"
     #playtime_2weeks
