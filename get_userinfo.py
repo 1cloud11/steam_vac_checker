@@ -1,6 +1,6 @@
 import requests
 import xml.etree.ElementTree as et
-from settings import STEAM_API_KEY, FACEIT_API_KEY
+from webapp.config import STEAM_API_KEY, FACEIT_API_KEY
 
 user_url = 'https://steamcommunity.com/id/1cloud/'
 
